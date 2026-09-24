@@ -34,6 +34,7 @@ Automated Kubernetes Deployment Platform
 | **devops-gitops** | Helm deployment configuration, Argo CD GitOps, Terraform infrastructure, Kubernetes management, Prometheus, and Grafana |
 
 ````
+````
 
 ---
 
