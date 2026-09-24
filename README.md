@@ -6,36 +6,6 @@ This repository contains the **FastAPI application**, **automated tests**, **Doc
 
 It serves as the **application and CI/CD component** of the larger DevOps project. The application is developed, tested, containerized, security-scanned, and published from this repository, while deployment and infrastructure management are handled separately in the **[devops-gitops](https://github.com/sakeenabi03/devops-gitops)** repository using **Helm**, **Argo CD**, **Kubernetes**, **Terraform**, **Prometheus**, and **Grafana**.
 
-## Related Repository
-
-**GitOps & Infrastructure Repository:** [github.com/sakeenabi03/devops-gitops](https://github.com/sakeenabi03/devops-gitops)
-
-The two repositories work together to implement the complete deployment platform:
-
-```text
-Automated Kubernetes Deployment Platform
-                    │
-        ┌───────────┴───────────┐
-        │                       │
-    devops-demo           devops-gitops
-   Application + CI/CD    GitOps + Infrastructure
-        │                       │
-   FastAPI + Tests        Helm + Argo CD
-   Docker + Trivy         Terraform + Kubernetes
-   GitHub Actions         Prometheus + Grafana
-   GHCR
-```
-
-### Repository Responsibilities
-
-| Repository        | Responsibility                                                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **devops-demo**   | FastAPI application, automated tests, Docker, GitHub Actions, Trivy, GHCR, Kubernetes manifests, and Helm chart         |
-| **devops-gitops** | Helm deployment configuration, Argo CD GitOps, Terraform infrastructure, Kubernetes management, Prometheus, and Grafana |
-
-````
-````
-
 ---
 
 ## Table of Contents
